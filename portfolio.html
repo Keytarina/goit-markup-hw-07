@@ -18,7 +18,9 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
-		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./css/mobile.css" />
+		<link rel="stylesheet" href="./css/tablet.css" />
+		<link rel="stylesheet" href="./css/desktop.css" />
 	</head>
 	<body>
 		<header class="header">
@@ -27,7 +29,52 @@
 					<!-- logotype -->
 					<a href="/" class="header-logo link"><span>Web</span>Studio</a>
 					<!-- menu -->
-					<ul class="header-list list">
+					<button
+						type="button"
+						class="menu-button"
+						aria-label="Перемикач мобільного меню"
+						aria-expanded="false"
+						aria-controls="menu-container"
+						data-menu-button
+					>
+						<svg width="30" height="20">
+							<use class="icon-cross" href="./images/icons.svg#cross"></use>
+							<use
+								class="icon-menu"
+								href="./images/icons.svg#burger-icon"
+							></use>
+						</svg>
+					</button>
+
+					<div class="menu-container" id="menu-container" data-menu>
+						<ul class="header-list list">
+							<li class="header-item">
+								<a class="header-link link" href="./index.html">Studio</a>
+							</li>
+							<li class="header-item">
+								<a class="header-link link current" href="./portfolio.html"
+									>Portfolio</a
+								>
+							</li>
+							<li class="header-item">
+								<a class="header-link link" href="#">Contacts</a>
+							</li>
+						</ul>
+						<ul class="contacts-list list">
+							<li class="contacts-item">
+								<a class="contacts-link link" href="mailto:info@devstudio.com"
+									>info@devstudio.com</a
+								>
+							</li>
+							<li class="contacts-item">
+								<a class="contacts-link link" href="tel:+110001111111"
+									>+11 (000) 111-11-11</a
+								>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				<!-- <ul class="header-list list">
 						<li class="header-item">
 							<a class="header-link link" href="./index.html">Studio</a>
 						</li>
@@ -39,10 +86,10 @@
 						<li class="header-item">
 							<a class="header-link link" href="#">Contacts</a>
 						</li>
-					</ul>
-				</nav>
+					</ul> -->
+
 				<!-- contacts -->
-				<ul class="contacts-list list">
+				<!-- <ul class="contacts-list list">
 					<li class="contacts-item">
 						<a class="contacts-link link" href="mailto:info@devstudio.com"
 							>info@devstudio.com</a
@@ -53,7 +100,7 @@
 							>+11 (000) 111-11-11</a
 						>
 					</li>
-				</ul>
+				</ul> -->
 			</div>
 		</header>
 

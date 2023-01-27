@@ -1,0 +1,94 @@
+@media screen and (min-width: 768px){
+	.container {
+		max-width: 768px; 
+	}
+    .hero-title {
+        margin-bottom: 40px;
+        width: 494px;
+        font-size: 56px;
+    }
+
+    .section-skills {
+        padding-bottom: 96px;
+    }
+    .skills-item-title {
+        text-align: left;
+    }
+    .skills-list{
+        flex-direction: row;
+        flex-wrap: wrap;
+	    row-gap: 72px;
+        column-gap: 24px;
+    }
+    .skills-item {
+        width: calc((100% - 1 * 24px) / 2);
+    }
+
+    .team-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 24px;
+        row-gap: 64px;
+        justify-content: center;
+    }
+    .team-item {
+        width: 264px;
+    }
+
+    .customers-list {
+        column-gap: 24px;
+    }
+    .customers-item {
+        width: calc((100% - 1 * 24px) / 2);
+        height: 88px;
+    }
+
+    .portfolio {
+        padding-top: 64px;
+        padding-bottom: 96px;
+    }
+    .filters-list {
+        margin-bottom: 64px;
+        justify-content: center;
+    }
+    .portfolio-list {
+        flex-direction: row;
+        row-gap: 72px;
+        column-gap: 24px;
+        justify-content: start;
+    }
+    .portfolio-item {
+        width: ((100% - 1 * 24px) / 2);
+    }
+    
+
+    .footer-content {
+        margin-left: 108px;
+        margin-right: 108px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+    }
+    .footer-text-content {
+        align-items: start;
+    }
+    .footer-text {
+        max-width: 264px;
+    }
+    .footer-contacts {
+        align-items: start;
+    }
+    .footer-subscribe {
+        align-items: start;
+    }
+    .footer-input-wrap {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .modal {
+        max-width: 408;
+        padding: 72px 24px 24px 24px;
+    }
+
+}
