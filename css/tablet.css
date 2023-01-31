@@ -2,9 +2,68 @@
 	.container {
 		max-width: 768px; 
 	}
+
+    .header-navigation {
+        display: flex;
+        margin-right: auto;
+        align-items: center;
+    }
+    .header-logo {
+        padding-bottom: 22px;
+    }
+    .header-list {
+        display: flex;
+        gap: 30px;
+    }
+    .header-link {
+        display: block;
+        position: relative;
+        padding-top: 24px;
+        padding-bottom: 22px;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: var(--title-color);
+        transition: color var(--transition-property);
+    }
+    .contacts-list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 4px;
+    }
+    .contacts-link {
+        font-size: 12px;
+        line-height: 1.3;
+        letter-spacing: 0.04em;
+    }
+
+    .mob-menu, .menu-open-button {
+        display: none;
+    }
+
+    .hero {
+        padding-bottom: 108px; 
+        background-image: linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)
+            ),
+            url("../images/hero/hero-bg-tab.jpg");
+    }
+    @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        .hero {
+            background-image: linear-gradient(
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)
+            ),
+            url("../images/hero/hero-bg-tab-2x.jpg");
+        }
+    }
     .hero-title {
         margin-bottom: 40px;
-        width: 494px;
+        max-width: 496px;
         font-size: 56px;
     }
 
@@ -48,6 +107,7 @@
         padding-bottom: 96px;
     }
     .filters-list {
+        flex-direction: row;
         margin-bottom: 64px;
         justify-content: center;
     }
@@ -58,7 +118,7 @@
         justify-content: start;
     }
     .portfolio-item {
-        width: ((100% - 1 * 24px) / 2);
+        width: calc((100% - 1 * 24px) / 2);
     }
     
 
@@ -91,4 +151,12 @@
         padding: 72px 24px 24px 24px;
     }
 
+}
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    .contacts-link.link-email {
+        padding-top: 24px;
+    }
+    .contacts-link.link-tel {
+        padding-bottom: 10px;
+    }
 }
