@@ -30,9 +30,11 @@
     .contacts-list {
         display: flex;
         flex-direction: column;
-        row-gap: 4px;
+        justify-content: center;
     }
     .contacts-link {
+        padding-top: 2px;
+        padding-bottom: 2px;
         font-size: 12px;
         line-height: 1.3;
         letter-spacing: 0.04em;
@@ -98,7 +100,7 @@
         column-gap: 24px;
     }
     .customers-item {
-        width: calc((100% - 1 * 24px) / 2);
+        width: calc((100% - 2 * 24px) / 3);
         height: 88px;
     }
 
@@ -111,6 +113,9 @@
         margin-bottom: 64px;
         justify-content: center;
     }
+    .filters-btn {
+        padding: 12px 24px;
+    }
     .portfolio-list {
         flex-direction: row;
         row-gap: 72px;
@@ -120,11 +125,8 @@
     .portfolio-item {
         width: calc((100% - 1 * 24px) / 2);
     }
-    
 
     .footer-content {
-        margin-left: 108px;
-        margin-right: 108px;
         flex-direction: row;
         flex-wrap: wrap;
         gap: 72px 24px;
@@ -145,18 +147,27 @@
         flex-direction: row;
         gap: 24px;
     }
+    .footer-form-input {
+        width: 264px;
+    } 
 
     .modal {
-        max-width: 408;
+        max-width: 408px;
         padding: 72px 24px 24px 24px;
     }
-
 }
-@media screen and (min-width: 768px) and (max-width: 1200px){
-    .contacts-link.link-email {
-        padding-top: 24px;
+
+@media screen and (min-width: 768px) and (max-width: 1200px){ 
+    .container.footer-content {
+        max-width: none;
+        padding-left: 108px;
+        padding-right: 108px;
     }
-    .contacts-link.link-tel {
-        padding-bottom: 10px;
+    .section-customers > .container {
+        padding: 0;
+    }
+    .section-customers {
+        padding-left: 108px;
+        padding-right: 108px;
     }
 }

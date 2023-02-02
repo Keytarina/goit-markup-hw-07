@@ -237,9 +237,11 @@ img {
 .mob-menu-contacts-list {
 	margin-bottom: 48px;
 }
+.mob-menu-contacts-item > .link-tel {
+	margin-bottom: 40px;
+}
 .mob-menu-contacts-link.link-tel {
 	display: block;
-	margin-bottom: 40px;
 	font-weight: 600;
 	font-size: 35px;
 	line-height: 1.1;
@@ -252,16 +254,6 @@ img {
 	line-height: 1.2;
 	letter-spacing: 0.02em;
 	color: var(--main-text-color);
-}
-.mob-menu-link.current::after {
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 0; 
-	height: 4px;
-	width: 100%;
-	background-color: #404bbf;
-	border-radius: 2px;
 }
 .mob_menu_soc-list {
 	display: flex;
@@ -436,7 +428,7 @@ img {
 /*---------- CUSTOMERS ------------ */
 
 .section-customers {
-	padding-top: 88px;
+	padding-top: 96px;
 }
 .customers-list {
 	display: flex;
@@ -486,7 +478,7 @@ img {
 .filters-item {
 }
 .filters-btn {
-	padding: 12px 24px;
+	padding: 8px 16px;
 	background-color: var(--light-collor);
 	border: 1px solid var(--accent-color);
 	border-radius: 4px;
@@ -658,6 +650,7 @@ img {
 	align-items: center;
 }
 .footer-input-wrap {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -672,7 +665,7 @@ img {
 	color: #FFFFFF;
 }
 .footer-form-input {
-	max-width: 396px;
+	width: 100%;
 	height: 40px;
 	padding: 8px 16px;
 	background-color: transparent;

@@ -3,3 +3,11 @@
 		max-width: 428px;
 	}
 }
+@media screen and (min-width: 320px) and (max-width: 768px) {
+	.footer-subscribe {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+}
