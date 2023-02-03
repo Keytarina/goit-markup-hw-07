@@ -30,11 +30,10 @@
     .contacts-list {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        /* justify-content: center; */
+        gap: 4px;
     }
     .contacts-link {
-        padding-top: 2px;
-        padding-bottom: 2px;
         font-size: 12px;
         line-height: 1.3;
         letter-spacing: 0.04em;
@@ -169,5 +168,8 @@
     .section-customers {
         padding-left: 108px;
         padding-right: 108px;
+    }
+    .contacts-link.link-email {
+        margin-top: 24px;
     }
 }

@@ -321,7 +321,7 @@ img {
 
 /*---------- SKILLS ------------ */
 .section-skills {
-	padding-bottom: 104px;
+	padding-bottom: 96px;
 }
 .skills-list {
 	display: flex;
@@ -534,7 +534,7 @@ img {
 	letter-spacing: 0.02em;
 	color: var(--light-collor);
     background-color: var(--primary-brand-color);
-	transform: translateY(100%);
+	transform: translateY(101%);
     transition: transform var(--transition-property);
     overflow: auto;
 }
